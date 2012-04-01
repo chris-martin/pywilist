@@ -138,8 +138,8 @@ class IWList():
 
     def getCellNoise(self, s):
         # Example: for "Quality=74/100  Signal level=-77 dBm  Noise level=-69 dBm" returns "-69"
-        s = s.split("Noise level")[1]
-        return s.strip().split(" ")[0][1:]
+        s = s.split("Noise level")
+        return s[1].strip().split(" ")[0][1:] if len(s) > 1 else None
 
     def getCellQuality(self, s):
         # Example: for "Quality=74/100  Signal level=-77 dBm  Noise level=-69 dBm" returns "74/100"
