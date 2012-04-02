@@ -56,7 +56,7 @@ class IWList():
     def printData(self):
         # Debugging print
         for s in self.data:
-            print s, self.data[s]
+            print(s, self.data[s])
 
     def parseCellData(self, rawCellData):
         # Parses a string containing raw cell data
