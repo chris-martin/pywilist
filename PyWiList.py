@@ -7,6 +7,6 @@ log.setLevel(logging.DEBUG)
 
 if __name__  ==  '__main__':
     iwl = IWList(sys.argv[1])
-    print iwl.getData()
+    print(iwl.getData())
 
     
